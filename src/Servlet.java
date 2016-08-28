@@ -1,6 +1,5 @@
 import java.io.IOException;
 import java.io.*;
-import java.util.Arrays;
 
 /**
  * Created by saleh on 8/28/16.
@@ -26,10 +25,10 @@ public class Servlet extends javax.servlet.http.HttpServlet {
             writer.println("<!DOCTYPE html><html>");
             writer.println("<head>");
             writer.println("<meta charset=\"UTF-8\" />");
-            writer.println("<title>MyServlet.java:doGet(): Servlet code!</title>"); // Edit to add Equation as a title
+            writer.println("<title>"+radio+"</title>");
             writer.println("</head>");
             writer.println("<body>");
-          //  writer.println(radio + number);
+            writer.println("<h1>Result of " + radio + " </h1>");
             if(radio.equals("Fibonacci")) {
                 for (int i = 1; i <= number; i++) {
                     writer.println(fibonacci.Fibonacci(i) + " ");

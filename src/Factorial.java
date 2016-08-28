@@ -2,7 +2,9 @@
  * Created by saleh on 8/29/16.
  */
 public class Factorial {
-
+    /**
+     * This class calculates the result of Factorial
+     */
     public static int Factorial (int number){
         if (number == 0)
         {
