@@ -10,6 +10,7 @@ public class Servlet extends javax.servlet.http.HttpServlet {
     Factorial fact = new Factorial();
     OddEven isEven = new OddEven();
     isPrime prime = new isPrime();
+    isPalindrome palindrome = new isPalindrome();
     protected void doPost(javax.servlet.http.HttpServletRequest request, javax.servlet.http.HttpServletResponse response) throws javax.servlet.ServletException, IOException {
 
     }
@@ -56,6 +57,15 @@ public class Servlet extends javax.servlet.http.HttpServlet {
                 }
                 else {
                     writer.println(number + " is not Prime");
+                }
+            }
+            else if (radio.equals("isPalindrome")){
+                if (palindrome.palindrome(number)==true)
+                {
+                    writer.println(number + " is Palindrome number");
+                }
+                else {
+                    writer.println(number + " is not a Palindrome number");
                 }
             }
             else
