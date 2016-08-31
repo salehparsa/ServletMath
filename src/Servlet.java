@@ -9,6 +9,7 @@ public class Servlet extends javax.servlet.http.HttpServlet {
     Fibonacci fibonacci = new Fibonacci();
     Factorial fact = new Factorial();
     OddEven isEven = new OddEven();
+    isPrime prime = new isPrime();
     protected void doPost(javax.servlet.http.HttpServletRequest request, javax.servlet.http.HttpServletResponse response) throws javax.servlet.ServletException, IOException {
 
     }
@@ -42,10 +43,19 @@ public class Servlet extends javax.servlet.http.HttpServlet {
             {
                 if (isEven.OddEven(number) == true)
                 {
-                    writer.println("Number is Even");
+                    writer.println(number+ " is Even");
                 }
                 else {
-                    writer.println("Number is odd");
+                    writer.println(number+ " is odd");
+                }
+            }
+            else if (radio.equals("isPrime")){
+                if (prime.isPrime(number) == true)
+                {
+                    writer.println(number + " is Prime");
+                }
+                else {
+                    writer.println(number + " is not Prime");
                 }
             }
             else
