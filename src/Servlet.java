@@ -8,6 +8,7 @@ public class Servlet extends javax.servlet.http.HttpServlet {
 
     Fibonacci fibonacci = new Fibonacci();
     Factorial fact = new Factorial();
+    OddEven isEven = new OddEven();
     protected void doPost(javax.servlet.http.HttpServletRequest request, javax.servlet.http.HttpServletResponse response) throws javax.servlet.ServletException, IOException {
 
     }
@@ -36,6 +37,16 @@ public class Servlet extends javax.servlet.http.HttpServlet {
             }
             else if (radio.equals("Factorial")){
                 writer.println(fact.Factorial(number));
+            }
+            else if (radio.equals("isEven"))
+            {
+                if (isEven.OddEven(number) == true)
+                {
+                    writer.println("Number is Even");
+                }
+                else {
+                    writer.println("Number is odd");
+                }
             }
             else
             {

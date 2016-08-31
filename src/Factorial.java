@@ -3,7 +3,7 @@
  */
 public class Factorial {
     /**
-     * This class calculates the result of Factorial
+     * This class calculates the result of Factorial base on reclusive function.
      */
     public static int Factorial (int number){
         if (number == 0)
