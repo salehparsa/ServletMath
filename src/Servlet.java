@@ -11,6 +11,7 @@ public class Servlet extends javax.servlet.http.HttpServlet {
     OddEven isEven = new OddEven();
     isPrime prime = new isPrime();
     isPalindrome palindrome = new isPalindrome();
+    Armstrong isArmstrong = new Armstrong();
     protected void doPost(javax.servlet.http.HttpServletRequest request, javax.servlet.http.HttpServletResponse response) throws javax.servlet.ServletException, IOException {
 
     }
@@ -66,6 +67,14 @@ public class Servlet extends javax.servlet.http.HttpServlet {
                 }
                 else {
                     writer.println(number + " is not a Palindrome number");
+                }
+            }
+            else if (radio.equals("isArmstrong")){
+                if (isArmstrong.isArmstrong(number)==true){
+                    writer.println(number + " is an Armstrong number");
+                }
+                else {
+                    writer.println(number + " is not an Armstrong number");
                 }
             }
             else
