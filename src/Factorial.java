@@ -5,7 +5,7 @@ public class Factorial {
     /**
      * This class calculates the result of Factorial base on reclusive function.
      */
-    public static int Factorial (int number){
+    public static long Factorial (int number){
         if (number == 0)
         {
             return 1;

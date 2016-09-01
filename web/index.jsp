@@ -21,6 +21,7 @@
     <input type="radio" name="radio" value="isEven">Odd or Even<br>
     <input type="radio" name="radio" value="isPrime">Is it Prime number?<br>
     <input type="radio" name="radio" value="isPalindrome">is Palindrome?<br>
+    <input type="radio" name="radio" value="isArmstrong">is Armstrong?<br>
     <input type="submit" value="Submit">
   </form>
   </body>
